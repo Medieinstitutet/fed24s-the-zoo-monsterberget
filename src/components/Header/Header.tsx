@@ -1,13 +1,16 @@
 import React from 'react'
 import { Navigation } from '../Navigation/Navigation'
+import logo from '../../assets/images/Logo.png'
+
 
 export const Header = () => {
   return (
     <header>
-        <div>
-          <img src=""></img>
-        </div>
-        <Navigation />
+      <img className="Logo" src={logo} alt="The Zoo Monsterberget Logo" />
+      <div>
+
+      </div>
+      <Navigation />
     </header>
   )
 }
