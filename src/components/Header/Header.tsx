@@ -4,8 +4,10 @@ import { Navigation } from '../Navigation/Navigation'
 export const Header = () => {
   return (
     <header>
-        <div>Logga</div>
-        <Navigation/>
+        <div>
+          <img src=""></img>
+        </div>
+        <Navigation />
     </header>
   )
 }
