@@ -1,18 +1,20 @@
-import React from 'react'
-import { Navigation } from '../Navigation/Navigation'
-import logo from '../../assets/images/Logo.png'
-
+import React from "react";
+import { Navigation } from "../Navigation/Navigation";
+import logo from "../../assets/images/Logo.png";
 
 export const Header = () => {
   return (
-    <header>
-      <img className="Logo" src={logo} alt="The Zoo Monsterberget Logo" />
-      <div>
-
-      </div>
+    <>
+      <header className="flex p-10 bg-yellow-300 justify-center items-center">
+        <img
+          className="rounded-t-full border-4 border-black"
+          src={logo}
+          alt="The Zoo Monsterberget Logo"
+        />
+      </header>
       <Navigation />
-    </header>
-  )
-}
+    </>
+  );
+};
 
-export default Header
+export default Header;
