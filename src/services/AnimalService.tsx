@@ -3,8 +3,8 @@ import { Animals } from "../Types/Animals";
 
 const BASE_URL = "https://animals.azurewebsites.net/api/animals";
 
-export function useAnimals() {
-  const [animals, setAnimals] = useState<Animals[]>([]);
+export function AnimalService() {
+  const [Animals, setAnimals] = useState<Animals[]>([]);
   const [Isloading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
@@ -25,25 +25,9 @@ export function useAnimals() {
     };
 
     fetchAnimals();
-  }, []);
-
+  }, [Animals]);
   if (Isloading) {
-    return <div className="text-8xl">Loading...</div>;
+    return <div>Loading...</div>;
   }
-  return (
-    <div className="flex flex-wrap justify-center">
-      {animals.map((animal) => (
-        <div key={animal.id} className="m-4 p-4 border rounded-lg shadow-lg">
-          <h2 className="text-2xl font-bold">{animal.name}</h2>
-          <p>{animal.shortDescription}</p>
-          <img
-            src={animal.imageUrl}
-            alt={animal.name}
-            className="w-full h-auto"
-          />
-        </div>
-      ))}
-    </div>
-  );
+  return Animals;
 }
-export default useAnimals;

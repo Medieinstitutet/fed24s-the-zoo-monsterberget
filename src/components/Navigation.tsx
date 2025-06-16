@@ -14,7 +14,7 @@ export const Navigation = () => {
           <NavLink to={"/Animals"}>Animals</NavLink>
         </li>
         <li>
-          <NavLink to={"/Contact"}>Contact</NavLink>
+          <NavLink to={"/AnimalsID"}>Mer om djuret</NavLink>
         </li>
       </ul>
     </nav>

@@ -1,11 +1,11 @@
 import React from "react";
-import { Navigation } from "../Navigation/Navigation";
-import logo from "../../assets/images/Logo.png";
+import { Navigation } from "./Navigation";
+import logo from "../assets/images/Logo.png";
 
 export const Header = () => {
   return (
     <>
-      <header className="flex p-10 bg-yellow-300 justify-center items-center">
+      <header className="flex p-10 bg-yellow-300 justify-center">
         <img
           className="rounded-t-full border-4 border-black"
           src={logo}

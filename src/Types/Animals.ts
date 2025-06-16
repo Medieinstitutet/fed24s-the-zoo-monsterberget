@@ -1,8 +1,8 @@
-export class Animals {
+export class Animal {
     id: number;
     name: string;
     latinName: string;
-    yeaarOfBirth: number;
+    yearOfBirth: number;
     shortDescription: string;
     longDescription: string;
     imageUrl: string;
@@ -15,7 +15,7 @@ export class Animals {
         this.id = data.id;
         this.name = data.name;
         this.latinName = data.latinName;
-        this.yeaarOfBirth = data.yeaarOfBirth;
+        this.yearOfBirth = data.yeaarOfBirth;
         this.shortDescription = data.shortDescription;
         this.longDescription = data.longDescription;
         this.imageUrl = data.imageUrl;

@@ -1,6 +1,5 @@
-import react, { use } from "react";
 import { createContext, useContext, useReducer } from "react";
-import { Animal } from "../Types/Animal";
+import { animalReducer } from "../Reducers/AnimalReducer";
 
 const AnimalContext = createContext<any>(null);
 
