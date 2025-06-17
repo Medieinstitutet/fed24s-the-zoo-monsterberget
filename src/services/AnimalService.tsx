@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
-import { Animals } from "../Types/Animals";
+import { Animal } from "../Types/Animals";
 
 const BASE_URL = "https://animals.azurewebsites.net/api/animals";
 
 export function AnimalService() {
-  const [Animals, setAnimals] = useState<Animals[]>([]);
+  const [Animals, setAnimals] = useState<Animal[]>([]);
   const [Isloading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
@@ -15,7 +15,7 @@ export function AnimalService() {
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
-        const data: Animals[] = (await response.json()) as Animals[];
+        const data: Animal[] = (await response.json()) as Animal[];
         setAnimals(data);
       } catch (error) {
         console.error("Error fetching animals:", error);

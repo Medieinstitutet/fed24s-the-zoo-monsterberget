@@ -1,14 +1,11 @@
-import React from 'react'
-import { useParams } from 'react-router';
+import React from "react";
 
 export const About = () => {
-    const { name } = useParams();
   return (
     <>
-    <h1>About</h1>
+      <h1>About</h1>
     </>
-  )
-}
+  );
+};
 
-export default About
-
+export default About;

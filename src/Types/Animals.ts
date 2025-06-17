@@ -2,12 +2,10 @@ export class Animal {
     id: number;
     name: string;
     latinName: string;
-    yearOfBirth: number;
     shortDescription: string;
     longDescription: string;
+    isfed: boolean;
     imageUrl: string;
-    medicine: string;
-    isFed: boolean;
     lastFed: Date;
 
     constructor(text: string) {
@@ -15,12 +13,10 @@ export class Animal {
         this.id = data.id;
         this.name = data.name;
         this.latinName = data.latinName;
-        this.yearOfBirth = data.yeaarOfBirth;
+        this.isfed = data.isfed || false; // Default to false if not provided
         this.shortDescription = data.shortDescription;
         this.longDescription = data.longDescription;
         this.imageUrl = data.imageUrl;
-        this.medicine = data.medicine;
-        this.isFed = data.isFed;
         this.lastFed = new Date(data.lastFed);
     }
 };

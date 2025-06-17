@@ -1,8 +1,7 @@
 
 import { useEffect, useState } from "react";
-import { Animal } from "../Types/Animals";
 
-interface animals {
+interface Animal {
   id: number;
   name: string;
   latinName: string;
@@ -10,7 +9,7 @@ interface animals {
   longDescription: string;
   imageUrl: string;
   isfed: boolean;
-  lastFed: string;
+  lastFed: Date;
 }
 
 export const useFetchAnimals = () => {
@@ -25,7 +24,7 @@ export const useFetchAnimals = () => {
         if (!response.ok) {
           throw new Error("something went wrong while fetching animals");
         }
-        const data: animals[] = await response.json();
+        const data: Animal[] = await response.json();
         setAnimals(data);
       } catch (err) {
         setError((err as Error).message);
