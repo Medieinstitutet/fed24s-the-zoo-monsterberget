@@ -13,9 +13,6 @@ export const Navigation = () => {
         <li>
           <NavLink to={"/Animals"}>Animals</NavLink>
         </li>
-        <li>
-          <NavLink to={"/AnimalsID"}>Mer om djuret</NavLink>
-        </li>
       </ul>
     </nav>
   );
