@@ -27,8 +27,7 @@ export const AnimalDetails = () => {
         src={animal.imageUrl}
         alt={animal.name}
         onError={(e) =>
-          (e.currentTarget.src =
-            "/fed24s-the-zoo-monsterberget/src/assets/images/fallback.jpg")
+          (e.currentTarget.src = "/src/assets/images/fallback.jpg")
         }
         className="w-full rounded shadow-md"
       />

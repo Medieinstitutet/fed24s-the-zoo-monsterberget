@@ -9,7 +9,7 @@ export interface AnimalContextType {
   longDescription: string;
   imageUrl: string;
   isFed: boolean;
-  lastFed: string;
+  lastFed: Date;
 }
 interface AnimalState {
   animals: AnimalContextType[];
@@ -33,22 +33,37 @@ export const AnimalProvider = ({ children }: { children: React.ReactNode }) => {
   const [state, dispatch] = useReducer(animalReducer, initialState);
 
   useEffect(() => {
-    const fetchAnimals = async () => {
-      try {
-        const response = await fetch(
-          "https://animals.azurewebsites.net/api/animals"
-        );
-        if (!response.ok) {
-          throw new Error("Something went wrong while fetching animals");
+    const savedAnimals = localStorage.getItem("animals");
+    if (savedAnimals) {
+      const parsedAnimals = JSON.parse(savedAnimals).map((animal: any) => ({
+        ...animal,
+        lastFed: new Date(animal.lastFed),
+      }));
+      dispatch({ type: "SET_ANIMALS", payload: parsedAnimals });
+    } else {
+      const fetchAnimals = async () => {
+        try {
+          const response = await fetch(
+            "https://animals.azurewebsites.net/api/animals"
+          );
+          if (!response.ok) {
+            throw new Error("Something went wrong while fetching animals");
+          }
+          const data: AnimalContextType[] = await response.json();
+          dispatch({ type: "SET_ANIMALS", payload: data });
+        } catch (error) {
+          console.error(error);
         }
-        const data: AnimalContextType[] = await response.json();
-        dispatch({ type: "SET_ANIMALS", payload: data });
-      } catch (error) {
-        console.error(error);
-      }
-    };
-    fetchAnimals();
+      };
+      fetchAnimals();
+    }
   }, []);
+
+  useEffect(() => {
+    if (state.animals.length > 0) {
+      localStorage.setItem("animals", JSON.stringify(state.animals));
+    }
+  }, [state.animals]);
 
   return (
     <AnimalContext.Provider value={{ state, dispatch }}>
