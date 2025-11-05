@@ -70,12 +70,8 @@ Ha roligt, skratta och lär er massor!
 ## 🔍 ESLint-varningar:
 
 
-## 🏆 **Betyg: VG**
-📌 **Motivering:** Koden uppfyller alla krav både för G och VG. Projektet använder en router korrekt med olika sidor och hanterar djurdata effektivt med hjälp av context och reducers. Dessutom används animeringar och en robust strategi för att hantera bildfel. Appen har en god struktur och följer villkoren för matningsstatus både på översiktssidan och detaljsidan.
+## 🏆 **Betyg: G**
+📌 **Motivering:** Koden uppfyller flera grundläggande krav som datahämtning och alternativ styling, men saknar verifierbar implementation av router och komplett funktionalitet för matning och visualisering.
 
 💡 **Förbättringsförslag:**  
-Det finns några mindre förbättringar som kan göras: 
-1. Konsolidera datahämtningen i en enda funktion eller hook för en mer konsekvent och DRY-approach, vilket kan göra koden mer underhållbar.
-2. Ge mer detaljerad felhantering, särskilt för nätverksförfrågningar, för en bättre användarupplevelse. 
-3. Se till att komponentnamnen följer en konsekvent stil, till exempel att börja med en stor bokstav.
-4. Undvik att importera TailwindCSS flera gånger i olika filer ('index.css' ekvivalent här används i flera `.tsx` filer) - detta bör endast ske en gång för varje ingångsfunktion.
+Lägg till och dokumentera router-implementation med layouts och child-routes. Förbättra integration och dokumentation av matningsstatus och använd subtila animationer för feedback.
