@@ -70,8 +70,8 @@ Ha roligt, skratta och lär er massor!
 ## 🔍 ESLint-varningar:
 
 
-## 🏆 **Betyg: VG**
-📌 **Motivering:** Projektet uppfyller alla krav för VG, inklusive användning av context, reducer, custom hook, och en välproducerad layout och routingstruktur.
+## 🏆 **Betyg: IG**
+📌 **Motivering:** Tekniskt fel vid AI-analys. Kontrollera manuellt.
 
 💡 **Förbättringsförslag:**  
-Förbättra enhetstester och dokumentation.
+Automatisk rättning med AI-assistant misslyckades. Vänligen kontrollera koden manuellt.
