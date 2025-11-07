@@ -1,7 +1,6 @@
 # 📌 Rättningsrapport – fed24s-the-zoo-monsterberget
 
 ## 🎯 Uppgiftens Krav:
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/xBUCHFwF)
 # The Zoo
 
 I denna inlämningsuppgift kommer ni att bygga ett zoo. Zoo:t har ett antal djur som kommer behöva matas. 
@@ -66,12 +65,11 @@ Välj en teknik gällande css som ni antingen vill lära er mer om eller som ni 
 
 Ha roligt, skratta och lär er massor!
 
-
 ## 🔍 ESLint-varningar:
 
 
-## 🏆 **Betyg: IG**
-📌 **Motivering:** Tekniskt fel vid AI-analys. Kontrollera manuellt.
+## 🏆 **Betyg: VG**
+📌 **Motivering:** Projektet uppfyller samtliga krav för betyget G och implementerar ytterligare funktioner enligt VG-kriterierna. Koden är välstrukturerad och använder avancerade React-koncept på rätt sätt.
 
 💡 **Förbättringsförslag:**  
-Automatisk rättning med AI-assistant misslyckades. Vänligen kontrollera koden manuellt.
+Fortsätt att optimera användningen av React hooks och context för att förenkla komponentkommunikation. Utforska ytterligare Tailwind CSS-funktioner för att förbättra UI-designen.
