@@ -68,8 +68,8 @@ Ha roligt, skratta och lär er massor!
 ## 🔍 ESLint-varningar:
 
 
-## 🏆 **Betyg: VG**
-📌 **Motivering:** Projektet uppfyller samtliga krav för betyget G och implementerar ytterligare funktioner enligt VG-kriterierna. Koden är välstrukturerad och använder avancerade React-koncept på rätt sätt.
+## 🏆 **Betyg: G**
+📌 **Motivering:** Projektet uppfyller alla grundläggande krav för betyg G. Koden är strukturerad och funktionaliteten är implementerad enligt specifikationerna. Dock finns det förbättringsområden som kan adresseras för att uppnå betyg VG, såsom användning av context och reducers för state management samt implementering av subtila animeringar.
 
 💡 **Förbättringsförslag:**  
-Fortsätt att optimera användningen av React hooks och context för att förenkla komponentkommunikation. Utforska ytterligare Tailwind CSS-funktioner för att förbättra UI-designen.
+För att nå betyg VG, bör studenten implementera datahämtning med hjälp av tjänster eller en custom hook, använda context för komponentkommunikation istället för props, och hantera djurens status med reducers. Dessutom bör subtila animeringar läggas till vid interaktioner och sidladdningar. Förbättrad felhantering och mer avancerad styling kan också bidra till en bättre användarupplevelse.
