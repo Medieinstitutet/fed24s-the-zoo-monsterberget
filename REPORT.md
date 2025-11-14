@@ -69,10 +69,7 @@ Ha roligt, skratta och lär er massor!
 
 
 ## 🏆 **Betyg: G**
-📌 **Motivering:** Projektet uppfyller de grundläggande kraven för betyg G. Det använder en router för att navigera mellan sidor, hanterar trasiga bildlänkar och använder en annan teknik än ren CSS för styling. Dock finns det förbättringspotential i kodstruktur, kodkvalitet och implementation av vissa funktioner, vilket hindrar det från att nå VG.
+📌 **Motivering:** Projektet uppfyller de grundläggande kraven för betyg G. Koden är funktionell och implementerar de nödvändiga funktionerna som beskrivs i uppgiften, inklusive användning av en router, hantering av trasiga bildlänkar, och användning av en alternativ stylingteknik. Dock saknas flera av de mer avancerade kraven för betyget VG, såsom användning av context och reducers för state management, samt subtila animeringar.
 
 💡 **Förbättringsförslag:**  
-1. Förbättra kodstruktur genom att dela upp komponenter mer modulärt och organisera filstrukturen konsekvent. Använd separata mappar för komponenter, hooks, context och reducer-funktioner.
-2. Öka kodkvaliteten genom att lägga till fler kommentarer och säkerställa konsekvent namngivning av variabler och funktioner. Minska kodupprepning genom att extrahera gemensamma mönster till återanvändbara funktioner eller komponenter.
-3. Säkerställ att alla funktionaliteter fungerar som förväntat, speciellt matningslogiken och statusindikatorerna för djuren. Testa applikationen noggrant för att identifiera och åtgärda eventuella buggar.
-4. Implementera best practices för frontend, inklusive säkerhetsåtgärder som validering av användarinmatning och robust hantering av API-fel. Optimera prestanda genom tekniker som lazy loading för bilder och komponenter.
+För att uppnå betyget VG, bör studenten implementera context för komponentkommunikation och använda reducers för djurhantering. Det är också viktigt att inkludera subtila animeringar vid interaktioner för att förbättra användarupplevelsen. Dessutom kan kodens struktur förbättras genom att bättre följa DRY-principen och förbättra felhanteringen, särskilt vid API-anrop och bildladdning.
